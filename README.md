@@ -3,4 +3,4 @@
 <hr>
 <br>
 
-<img src='./imagesFromGit/homePage.jpg'>
+<img src='./imagesFromGit/paginaInicial.jpg'>
