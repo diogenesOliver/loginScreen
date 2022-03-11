@@ -3,7 +3,7 @@
 <hr>
 <br>
 
-<img src='./imagesFromGit/paginaInicial.jpg'>
+<img src='paginaInicial.jpg'>
 
 <br><br>
 
