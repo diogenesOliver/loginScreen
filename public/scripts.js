@@ -4,11 +4,11 @@ document.addEventListener('DOMContenteLoaded', () => {
 
 function redirectToRoute(){
 
-    let inputEmail = document.getElementById('inputEmail')
-    let inputSenha = document.getElementById('inputSenha')
-    let inputConfirmarSenha = document.getElementById('inputConfirmarSenha')
+    let inputEmail = document.getElementById('inputEmail').value
+    let inputSenha = document.getElementById('inputSenha').value
+    let inputConfirmarSenha = document.getElementById('inputConfirmarSenha').value
     
-    const methodDefined = { method: 'POST',  }
+    const methodDefined = { method: 'POST' }
 
     fetch('http://localhost:3000/api/register', methodDefined).then(res => {
 
