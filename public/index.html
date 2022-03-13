@@ -9,30 +9,41 @@
 </head>
 <body>
     
-    <div class="container">
+        <div class="container">
 
-        <div class="divLogin" id="createUser">
-            <img src="image.png" class="logoLogin">
-            <input type="text" placeholder="Email" class="texts" id="inputEmail">
-            <input type="password" placeholder="Senha" class="texts" id="inputSenha">
-            <input type="password" placeholder="Confirmar Senha" class="texts" id="inputConfirmarSenha">
+            <div class="divLogin" id="createUser">
 
-            <button class="btn"  id="oneButton" onclick="redirectToRoute()">Criar Usuário</button>
+                <img src="image.png" class="logoLogin">
 
-            <a href="#" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
+                <form>
 
-        </div>
+                    <input type="text" placeholder="Email" class="texts" id="inputEmail" name="email" required>
+                    <input type="password" placeholder="Senha" class="texts" id="inputSenha" name="senha" required>
+                    <input type="password" placeholder="Confirmar Senha" class="texts" id="inputConfirmarSenha" name="confirmSenha" required>
+
+                    <button class="btn"  id="buttonCreateUser" onclick="redirectToRoute()">Criar Usuário</button>
+
+                    <a href="#" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
+
+                </form>
+
+
+            </div>
 
         <div class="divLogin" id="loginUser">
             <img src="image.png" class="logoLogin">
-            <input type="text" placeholder="Email" class="texts" id="inputEmail">
-            <input type="password" placeholder="Senha" class="texts" id="inputSenha">
 
-            <button class="btn"  id="oneButton" onclick="redirectToRoute()"> Entrar </button>
+            <form>
 
-            <a href="#" id="linkCreateUser" onclick="criarUmUsuario()"> Não possui cadastro? Criar usuário </a>
+                <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="senha" required>
+                <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="confirmSenha" required>
 
-            <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+                <button class="btn"  id="buttonLoginUser" onclick="redirectToRoute()"> Entrar </button>
+
+                <a href="#" id="linkCreateUser" onclick="criarUmUsuario()"> Não possui cadastro? Criar usuário </a>
+                <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+
+            </form>
 
         </div>
 
@@ -43,6 +54,10 @@
             <li><a href=""> Home </a></li>
         </ul>
         <img src="image.png" class="picture">
+
+        <div class="warning" id="warningInfo">
+            <h4> Preencha todos os campos! </h4>
+        </div>
 
     </div>
 
