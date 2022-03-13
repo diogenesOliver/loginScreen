@@ -11,13 +11,28 @@
     
     <div class="container">
 
-        <div class="divLogin">
+        <div class="divLogin" id="createUser">
             <img src="image.png" class="logoLogin">
             <input type="text" placeholder="Email" class="texts" id="inputEmail">
             <input type="password" placeholder="Senha" class="texts" id="inputSenha">
             <input type="password" placeholder="Confirmar Senha" class="texts" id="inputConfirmarSenha">
 
             <button class="btn"  id="oneButton" onclick="redirectToRoute()">Criar Usuário</button>
+
+            <a href="" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
+
+        </div>
+
+        <div class="divLogin" id="loginUser">
+            <img src="image.png" class="logoLogin">
+            <input type="text" placeholder="Email" class="texts" id="inputEmail">
+            <input type="password" placeholder="Senha" class="texts" id="inputSenha">
+
+            <button class="btn"  id="oneButton" onclick="redirectToRoute()"> Entrar </button>
+
+            <a href="" id="linkCreateUser" onclick="criarUmUsuario()"> Não possui cadastro? Criar usuário </a>
+
+            <a href="" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
 
         </div>
 

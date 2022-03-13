@@ -16,3 +16,29 @@ function redirectToRoute(){
     })
 
 }
+
+function entrarNaConta(){
+
+    let linkEnter = document.getElementById('linkEnter')
+    let loginUser = document.getElementById('loginUser')
+    let createUser = document.getElementById('createUser')
+
+    linkEnter.addEventListener('click', () => {
+        loginUser.style.display = 'block'
+        createUser.style.display = 'none'
+    })
+
+}
+
+function criarUmUsuario(){
+
+    let linkCreateUser = document.getElementById('linkCreateUser')
+    let createUser = document.getElementById('createUser')
+    let loginUser = document.getElementById('loginUser')
+
+    linkCreateUser.addEventListener('click', () => {
+        createUser.style.display = 'block'
+        loginUser.style.display = 'none'
+    })
+
+}
