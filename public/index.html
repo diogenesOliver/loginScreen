@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
     <title>DevTech</title>
 </head>
 <body>
@@ -12,10 +13,7 @@
         <div class="container">
 
             <div class="divLogin" id="createUser">
-
-                <img src="image.png" class="logoLogin">
-
-                <form>
+                    <img src="image.png" class="logoLogin">
 
                     <input type="text" placeholder="Email" class="texts" id="inputEmail" name="email" required>
                     <input type="password" placeholder="Senha" class="texts" id="inputSenha" name="senha" required>
@@ -25,25 +23,18 @@
 
                     <a href="#" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
 
-                </form>
-
-
             </div>
 
         <div class="divLogin" id="loginUser">
             <img src="image.png" class="logoLogin">
 
-            <form>
-
                 <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="senha" required>
                 <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="confirmSenha" required>
 
-                <button class="btn"  id="buttonLoginUser" onclick="redirectToRoute()"> Entrar </button>
+                <button class="btn"  id="buttonLoginUser" onclick="redirectToSameRoute()"> Entrar </button>
 
                 <a href="#" id="linkCreateUser" onclick="criarUmUsuario()"> Não possui cadastro? Criar usuário </a>
                 <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
-
-            </form>
 
         </div>
 

@@ -8,7 +8,10 @@ const apiRoute = require('./routes/api')
 const PORT = 3000
 const app = express()
 
-app.use('/api', express.json(), apiRoute)
+/* app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'public')) */
+
+app.use('/api', express.json(), express.urlencoded(), apiRoute)
 app.use('/', express.static(path.join(__dirname, 'public')))
 
 mognsoose.connect(process.env.URL_DATABASE).then(() => {

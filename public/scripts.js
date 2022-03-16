@@ -12,6 +12,22 @@ function redirectToRoute(){
 
     fetch('http://localhost:3000/api/register', methodDefined).then(res => {
 
+        console.log( res )
+
+    })
+
+}
+
+function redirectToSameRoute(){
+
+    let emailUserOfSystem = document.getElementById('emailUserOfSystem').value
+    let passwordUserOfSystem = document.getElementById('passwordUserOfSystem').value
+
+    const methodDefined = { method: 'POST' }    
+
+    fetch('http://localhost:3000/api/login', methodDefined).then(res => {
+
+        
 
     })
 

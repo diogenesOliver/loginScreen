@@ -11,9 +11,7 @@ const register = async (req, res) => {
 
     const { email, senha, confirmSenha } = req.body
 
-    if(!email) return res.status(422).json({ msg: 'O email é obrigatório' })
-    if(!senha) return res.status(422).json({ msg: 'A senha é obrigatória' })
-    if(!confirmSenha) return res.status(422).json({ msg: 'Confirme sua senha por favor' })
+    if(!email || !senha || !confirmSenha) return res.status(422).json({ msg: 'Preencha todos os campos por favor!' })
 
     if(senha != confirmSenha) return res.status(422).json({ msg: 'A senhas são diferentes!' })
 
@@ -24,7 +22,7 @@ const register = async (req, res) => {
     const salt = await bcrypt.genSalt(14)
     const senhaCriptografada = await bcrypt.hash(senha, salt)
 
-    const user = new User({ email, senha: senhaCriptografada, confirmSenha: senhaCriptografada })
+    const user = new User({ email, senha: senhaCriptografada, confirmSenha: senhaCriptografada})
 
     try{
         user.save()
@@ -39,6 +37,8 @@ const register = async (req, res) => {
 const loginUser = async (req, res) => { 
 
     const { email, senha } = req.body
+
+    if(!email || !senha) return res.status(200).json({ msg: 'Preencha todos os campos por favor!' })
 
     const user = await User.findOne({ email: email })
 
