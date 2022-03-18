@@ -26,7 +26,7 @@ const register = async (req, res) => {
 
     try{
         user.save()
-        res.status(200).json({ msg: 'Usuário criado com sucesso!' })
+        res.status(200).send('Usuário criado com sucesso!')
     }catch(error){
         console.log()
         res.status(500).json({ msgS: '[ERROR - 500]: Houve um erro no veridor! Tente novamente mais tarde' })

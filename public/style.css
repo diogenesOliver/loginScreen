@@ -127,6 +127,10 @@ a:hover{
     border-radius: 5px;
 }
 
+.gif-success{
+    width: 200px;
+}
+
 h4{
     position: absolute;
     margin-top: 12px;

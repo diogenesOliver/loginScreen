@@ -2,9 +2,9 @@ const express = require('express')
 const linkController = require('../linkController/linkController')
 const router = express.Router()
 
-/* router.get('/homePage', (req, res) => res.render('template')) */
+router.get('/home-page', (req, res) => res.render('index'))
 
-router.post('/register', express.urlencoded({ extended: true }), linkController.register)
-router.post('/login', express.urlencoded({ extended: true }), linkController.loginUser)
+router.post('/register', linkController.register)
+router.post('/login', linkController.loginUser)
 
 module.exports = router

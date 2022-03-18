@@ -9,19 +9,20 @@
     <title>DevTech</title>
 </head>
 <body>
-    
         <div class="container">
 
             <div class="divLogin" id="createUser">
                     <img src="image.png" class="logoLogin">
 
-                    <input type="text" placeholder="Email" class="texts" id="inputEmail" name="email" required>
-                    <input type="password" placeholder="Senha" class="texts" id="inputSenha" name="senha" required>
-                    <input type="password" placeholder="Confirmar Senha" class="texts" id="inputConfirmarSenha" name="confirmSenha" required>
+                    <form action="/api/register" method="post">
 
-                    <button class="btn"  id="buttonCreateUser" onclick="redirectToRoute()">Criar Usuário</button>
-
-                    <a href="#" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
+                        <input type="text" placeholder="Email" class="texts" id="inputEmail" name="email" required>
+                        <input type="password" placeholder="Senha" class="texts" id="inputSenha" name="senha" required>
+                        <input type="password" placeholder="Confirmar Senha" class="texts" id="inputConfirmarSenha" name="confirmSenha" required>
+                        <button class="btn"  id="buttonCreateUser" onclick="redirectToRoute()">Criar Usuário</button>
+                        <a href="#" id="linkEnter" onclick="entrarNaConta()"> Já possui uma conta? Entrar </a>
+                    
+                    </form>
 
             </div>
 
@@ -51,6 +52,10 @@
         </div>
 
     </div>
+
+    <!-- <div>
+        <img class="gif-success" src="https://media2.giphy.com/media/MpLQ8hY8UecBrR2cQo/giphy.gif?cid=ecf05e47oknx6sge8g7pupq6wtfg6j4fcfqzarm9l0uzkghm&rid=giphy.gif&ct=s" alt="">
+    </div> -->
 
     <script src="scripts.js"></script>
 
