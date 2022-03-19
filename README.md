@@ -7,7 +7,7 @@
 
 <br>
 
-<h3 align='center'> Abaixo temos um campo para usuários que já possuem um cadastrado <h3>
+<h3 align='center'> Abaixo temos um campo para usuários que já possuem um cadastrado </h3>
 
 <hr>
 <br>
@@ -16,13 +16,13 @@
 
 <br>
 
-<h3 align='center'> Abaixo temos um template de quando o cliente cria um novo usuário <h3>
+<h3 align='center'> Abaixo temos um template de quando o cliente cria um novo usuário </h3>
 <hr>
 <br>
 
 <img src='succesCreateUser.png'>
 
-<br>
+<br><br>
 
 <p> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
 
