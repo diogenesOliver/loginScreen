@@ -24,7 +24,7 @@
 
 <br><br>
 
-<p> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
+<p align='center'> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
 
 <br><br><br>
 
