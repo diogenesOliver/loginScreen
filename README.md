@@ -22,7 +22,7 @@
 
 <img src='succesCreateUser.png'>
 
-<br>
+<br><br><br>
 
 <p> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
 
