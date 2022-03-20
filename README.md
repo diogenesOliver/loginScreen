@@ -20,7 +20,7 @@
 <hr>
 <br>
 
-<img src='succesCreateUser.png'>
+<img src='msgLogin.png'>
 
 <br><br>
 
