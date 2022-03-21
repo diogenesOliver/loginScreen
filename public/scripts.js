@@ -24,6 +24,8 @@ function redirectToRoute(){
             warningInfo.style.display = 'none'
         })
 
+    }).catch(err => {
+        console.log(err)
     })
 
 }
@@ -37,8 +39,18 @@ function redirectToSameRoute(){
 
     fetch('http://localhost:3000/api/login', methodDefined).then(res => {
 
-        
+        if(emailUserOfSystem == '' || passwordUserOfSystem == ''){
+            warningInfo.style.display = 'block'
+        }
 
+        let exitWarning = document.getElementById('exitWarning')
+
+        exitWarning.addEventListener('click', () => {
+            warningInfo.style.display = 'none'
+        })
+
+    }).catch(err => {
+        console.log(err)
     })
 
 }

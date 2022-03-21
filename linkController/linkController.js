@@ -26,10 +26,10 @@ const register = async (req, res) => {
 
     try{
         user.save()
-        res.render('login.ejs')
+        res.render('logar.ejs')
     }catch(error){
         console.log()
-        res.status(500).json({ msgS: '[ERROR - 500]: Houve um erro no veridor! Tente novamente mais tarde' })
+        res.status(500).json({ msg: '[ERROR - 500]: Houve um erro no veridor! Tente novamente mais tarde' })
     }
 
 }
