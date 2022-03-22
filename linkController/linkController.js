@@ -49,7 +49,7 @@ const loginUser = async (req, res) => {
     if(verificSenha == false){
         res.status(422).json({ msg: 'Senha inválida' })
     }else{
-        res.status(200).json({ msg: 'Bem-vindo ao portal do usuário!' })
+        res.status(200).render('portalUser.ejs')
     }
 
  }

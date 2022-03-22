@@ -26,6 +26,15 @@
 
 <p align='center'> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
 
+<br><br>
+
+<h3 align='center'> Abaixo temos a tela que o usuário é redirecionado quando loga </h3>
+
+<hr>
+<br>
+
+<img src='wellComeToPortalUser.png'>
+
 <br><br><br>
 
 > [Obs]: 
