@@ -1,4 +1,8 @@
-<h3 align='center'> Abaixo temos a imagem da tela principal </h3>
+<h1>[PROJECT UNDER MAINTENANCE...]</h1>
+
+<br><br>
+
+<h3> Abaixo temos a imagem da tela principal </h3>
 
 <hr>
 <br>
@@ -7,7 +11,7 @@
 
 <br>
 
-<h3 align='center'> Abaixo temos um campo para usuários que já possuem um cadastrado </h3>
+<h3> Abaixo temos um campo para usuários que já possuem um cadastrado </h3>
 
 <hr>
 <br>
@@ -16,7 +20,7 @@
 
 <br>
 
-<h3 align='center'> Abaixo temos um template de quando o cliente cria um novo usuário </h3>
+<h3> Abaixo temos um template de quando o cliente cria um novo usuário </h3>
 <hr>
 <br>
 
@@ -24,11 +28,11 @@
 
 <br><br>
 
-<p align='center'> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
+<p> A partir do momento em que o cliente entra com uma requisição para criar um novo usuário, ele é redirecionado para um template de boas vindas. Como vista acima! </p>
 
 <br><br>
 
-<h3 align='center'> Abaixo temos a tela que o usuário é redirecionado quando loga </h3>
+<h3> Abaixo temos a tela que o usuário é redirecionado quando loga </h3>
 
 <hr>
 <br>
