@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon">
     <title>DevTech</title>
 </head>
+
 <body>
-        <div class="container">
+    <div class="container">
 
-        <div class="divLogin" id="loginUser">
-            <img src="image.png" class="logoLogin">
+        <nav>
+            <div></div>
 
-            <form action="/api/login" method="post">
+            <ul>
+                <li><a href=""> Sobre </a></li>
+                <li><a href=""> Projetos </a></li>
+                <li><a href=""> Serviços </a></li>
+                <li><a href=""> Home </a></li>
+            </ul>
+        </nav>
 
-                <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="email" required>
-                <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="senha" required>
 
-                <button class="btn"  id="buttonLoginUser" type="submit" onclick="redirectToSameRoute()"> Entrar </button>
+        <section class="login-section">
 
-                <a href="/api/home-page" id="linkCreateUser"> Não possui cadastro? Criar usuário </a>
-                <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+            <div class="divLogin" id="loginUser">
+                <img src="./assets/image.png" class="logoLogin">
 
-            </form>
+                <form action="/api/login" method="post">
 
-        </div>
+                    <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="email" required>
+                    <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="senha"
+                        required>
 
-        <ul>
-            <li><a href=""> Sobre</a></li>
-            <li><a href=""> Projetos </a></li>
-            <li><a href=""> Serviços </a></li>
-            <li><a href=""> Home </a></li>
-        </ul>
-        <img src="image.png" class="picture">
+                    <button class="btn" id="buttonLoginUser" type="submit" onclick="redirectToSameRoute()"> Entrar
+                    </button>
+
+                    <a href="/api/home-page" id="linkCreateUser"> Não possui cadastro? Criar usuário </a>
+                    <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+
+                </form>
+            </div>
+
+            <img src="./assets/image.png" class="picture">
+
+        </section>
 
         <div class="warning" id="warningInfo">
             <h4> Preencha todos os campos! </h4>
@@ -45,4 +59,5 @@
     <script src="scripts.js"></script>
 
 </body>
+
 </html>

@@ -18,7 +18,7 @@
 
 <br>
 
-<img src='./images-from-README/userEnter.png'>
+<img src='./images-from-README/new_userEnter.png'>
 
 <br>
 

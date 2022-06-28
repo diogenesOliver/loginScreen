@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image.png" type="image/x-icon">
     <title>DevTech</title>
 </head>
+
 <body>
-        <div class="container">
+    <div class="container">
 
-        <div class="divLogin" id="loginUser">
-            <img src="image.png" class="logoLogin">
+        <nav>
+            <div></div>
 
-            <form action="/api/login" method="post">
+            <ul>
+                <li><a href=""> Sobre </a></li>
+                <li><a href=""> Projetos </a></li>
+                <li><a href=""> Serviços </a></li>
+                <li><a href=""> Home </a></li>
+            </ul>
+        </nav>
 
-                <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="email" required>
-                <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="senha" required>
+        <section class="login-section">
 
-                <button class="btn"  id="buttonLoginUser" type="submit" onclick="redirectToSameRoute()"> Entrar </button>
+            <div class="divLogin" id="loginUser">
+                <img src="./assets/image.png" class="logoLogin">
 
-                <a href="/api/home-page" id="linkCreateUser"> Não possui cadastro? Criar usuário </a>
-                <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+                <form action="/api/login" method="post">
 
-            </form>
+                    <input type="text" placeholder="Email" class="texts" id="emailUserOfSystem" name="email" required>
+                    <input type="password" placeholder="Senha" class="texts" id="passwordUserOfSystem" name="senha"
+                        required>
 
-        </div>
+                    <button class="btn" id="buttonLoginUser" type="submit" onclick="redirectToSameRoute()"> Entrar
+                    </button>
 
-        <ul>
-            <li><a href=""> Sobre</a></li>
-            <li><a href=""> Projetos </a></li>
-            <li><a href=""> Serviços </a></li>
-            <li><a href=""> Home </a></li>
-        </ul>
+                    <a href="/api/home-page" id="linkCreateUser"> Não possui cadastro? Criar usuário </a>
+                    <a href="#" id="linkEnter"> Precisa de ajuda? Consulte nosso suporte </a>
+
+                </form>
+
+            </div>
+
+            <div class="msgLogin">
+                <img class="gif-success"
+                    src="https://media2.giphy.com/media/MpLQ8hY8UecBrR2cQo/giphy.gif?cid=ecf05e47oknx6sge8g7pupq6wtfg6j4fcfqzarm9l0uzkghm&rid=giphy.gif&ct=s"
+                    alt="">
+                <h3>Usuário criado com sucesso</h3>
+                <p>Seja Bem-Vindo(a) a DevTech, a melhor companhia de tecnologia do Brasil <br> Venha se tornar um(a)
+                    profissional da área com a gente!</p>
+
+                <br><br>
+
+                <p>Entre com o seu Email e Senha para verificarmos sua autenticidade</p>
+            </div>
+
+        </section>
 
         <div class="warning" id="warningInfo">
             <h4> Preencha todos os campos! </h4>
             <p id="exitWarning">X</p>
-        </div>
-        
-        <div class="msgLogin">
-            <img class="gif-success" src="https://media2.giphy.com/media/MpLQ8hY8UecBrR2cQo/giphy.gif?cid=ecf05e47oknx6sge8g7pupq6wtfg6j4fcfqzarm9l0uzkghm&rid=giphy.gif&ct=s" alt="">
-            <h3>Usuário criado com sucesso</h3>
-            <p>Seja Bem-Vindo(a) a DevTech, a melhor companhia de tecnologia do Brasil <br> Venha se tornar um(a) profissional da área com a gente!</p>
-
-            <br><br>
-
-            <p>Entre com o seu Email e Senha para verificarmos sua autenticidade</p>
         </div>
 
     </div>
@@ -54,4 +70,5 @@
     <script src="scripts.js"></script>
 
 </body>
+
 </html>

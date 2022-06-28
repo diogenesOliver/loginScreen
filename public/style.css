@@ -237,9 +237,6 @@ h4 {
 
 .msgLogin {
     text-align: center;
-    position: absolute;
-    margin-top: 200px;
-    margin-left: 360px;
 }
 
 h3 {
@@ -252,30 +249,38 @@ p {
     line-height: 25px;
 }
 
-.wellComeContainer {
-    position: absolute;
-    text-align: center;
-    margin-left: 700px;
-    margin-top: 450px;
-    line-height: 30px;
+/* Portal do Usuário */
+
+.portal-user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+
+    gap: 3rem;
 }
 
-.trophyGif {
-    position: absolute;
-    width: 250px;
-    margin-left: 880px;
-    margin-top: 100px;
+.portal-user img {
+    height: 250px;
+}
+
+.wellComeContainer {
+    text-align: center;
+    line-height: 30px;
 }
 
 .learnMoreAbout {
     font-size: 17px;
+
     color: black;
-    margin-top: 750px;
-    margin-left: 895px;
-    border: none;
     background-color: aliceblue;
+
+    border: none;
+    border-radius: 5px;
+
     height: 40px;
     width: 200px;
-    border-radius: 5px;
+
     cursor: pointer;
 }
