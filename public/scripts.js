@@ -13,19 +13,21 @@ function redirectToRoute(){
     fetch('http://localhost:3000/api/register', methodDefined).then(res => {
 
         let warningInfo = document.getElementById('warningInfo')
-
-        if(inputEmail.value == '' || inputSenha.value == '' || inputConfirmarSenha == ''){
-            warningInfo.style.display = 'block'
-        }
-
         let exitWarning = document.getElementById('exitWarning')
 
+        if(!inputEmail || !inputSenha || !inputConfirmarSenha)
+            warningInfo.style.display = 'block'
+
         exitWarning.addEventListener('click', () => {
+
             warningInfo.style.display = 'none'
+
         })
 
     }).catch(err => {
+
         console.log(err)
+
     })
 
 }
@@ -39,18 +41,21 @@ function redirectToSameRoute(){
 
     fetch('http://localhost:3000/api/login', methodDefined).then(res => {
 
-        if(emailUserOfSystem == '' || passwordUserOfSystem == ''){
-            warningInfo.style.display = 'block'
-        }
-
         let exitWarning = document.getElementById('exitWarning')
 
+        if(!emailUserOfSystem || !passwordUserOfSystem)
+            warningInfo.style.display = 'block'
+
         exitWarning.addEventListener('click', () => {
+
             warningInfo.style.display = 'none'
+
         })
 
     }).catch(err => {
+
         console.log(err)
+        
     })
 
 }
