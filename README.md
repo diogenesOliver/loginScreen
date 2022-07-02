@@ -29,7 +29,7 @@
 
 <br>
 
-<img src='./images-from-README/new_WellComeToPortalUser.png'>
+<img src='./images-from-README/wellComeToPortalUser.png'>
 
 <br><br>
 
