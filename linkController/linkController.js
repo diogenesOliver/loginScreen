@@ -1,11 +1,8 @@
 require('dotenv').config()
 
-const express = require('express')
-const mongoose = require('mongoose')
-const bodyParser = require('body-parser')
-const User = require('../models/Info')
 const bcrypt = require('bcrypt')
-const jwt = require('jsonwebtoken')
+
+const User = require('../models/Info')
 
 const registeringUser = async (req, res) => {
 
