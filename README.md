@@ -1,10 +1,18 @@
-<h1>[PROJECT UNDER MAINTENANCE...]</h1>
+<h1>[ Project update ]</h1>
 
-<br><br>
+<br>
 
 <p>
 ⚠️ This project will undergo some changes in its architecture ⚠️
 </p>
+
+Future updates:
+
+- [ ] SOLID Principles to BackEnd <br>
+- [ ] TypeScript integration with NodeJs <br>
+- [ ] Dependency Injection <br>
+- [ ] FrontEnd updates <br>
+- [ ] Documentation updates
 
 <br><br>
 
@@ -36,18 +44,3 @@
 <br>
 
 <img src='./images-from-README/wellComeToPortalUser.png'>
-
-<br><br>
-
-- <strong> NOTE: The password and password confirmation are saved in the already encrypted database. </strong>
-
-<br>
-
-- <strong> Coming soom: Responsive website </strong>
-
-- <strong> Coming soom: URL Project </strong>
-
-
-<br>
-
-Contribuidor do projeto - (Diógenes Ribeiro de Oliveira) - [Visit my Linkedin](https://www.linkedin.com/in/diogenesriboliveira/)
