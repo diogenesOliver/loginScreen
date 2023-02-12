@@ -3,7 +3,7 @@
 <br><br>
 
 <p>
-This project will undergo some changes in its architecture
+⚠️ This project will undergo some changes in its architecture ⚠️
 </p>
 
 <br><br>
