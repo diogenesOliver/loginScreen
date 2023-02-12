@@ -1,4 +1,4 @@
-<h1>[ Project update ]</h1>
+<h1>[ Project update ] 🆙️</h1>
 
 <br>
 
