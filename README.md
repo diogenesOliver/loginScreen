@@ -2,6 +2,12 @@
 
 <br><br>
 
+<p>
+This project will undergo some changes in its architecture
+</p>
+
+<br><br>
+
 <h2> This is the home page </h2>
 <p> This is the first image a non-logged-in customer sees when entering the site. </p>
 
