@@ -1,4 +1,24 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
+import express from 'express'
+import path from 'path'
+
+import { routes } from './routes'
+
+dotenv.config()
+
+const app = express()
+
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'public'))
+
+app.use('/api', express.json(), express.urlencoded({ extended: true }), routes)
+app.use('/api', express.static(path.join(__dirname, 'public')))
+
+export { app }
+
+/* JS */
+
+/* require('dotenv').config()
 
 const express = require('express')
 const mongoose = require('mongoose')
@@ -19,4 +39,4 @@ mongoose.connect(process.env.URL_DATABASE).then(() => {
     })
 }).catch((error) => {
     console.log(error)
-})
+}) */
