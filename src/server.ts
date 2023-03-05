@@ -1,6 +1,11 @@
 import { app } from "./main";
-const PORT = 8080
+import { dataBaseCLientInstance } from './infra/mongoDBClientIndex'
 
-app.listen(PORT, () => {
+require('dotenv').config()
+
+const PORT = process.env.PORT || 8080
+
+app.listen(PORT, async () => {
+    await dataBaseCLientInstance.connect()
     console.log(`Server running on port: ${PORT}`)
 })
