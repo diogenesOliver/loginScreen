@@ -1,16 +1,26 @@
-import { Schema } from 'mongoose'
+import { Schema, model } from 'mongoose'
 
-const UserModel = new Schema({
+interface IUser {
+    email: string,
+    senha: string,
+    confirmaSenha: string
+}
 
-    email: { type: String, required: true },
-    senha: {
-        type: String,
-        required: true,
-        minlength: 6,
-        maxlength: 100
-    },
-    confirmaSenha: { type: String, required: true }
+const UserModel = new Schema<IUser>(
+    {
+        email: { type: String, required: true },
+        senha: {
+            type: String,
+            required: true,
+            minlength: 6,
+            maxlength: 100
+        },
+        confirmaSenha: { type: String, required: true }
+    },{
+        timestamps: true
+    }
+)
 
-})
+const User = model<IUser>('User', UserModel)
 
-export { UserModel }
+export { User }
